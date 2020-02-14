@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/fragmentMain">
+
+    <fragment
+        android:id="@+id/fragmentMain"
+        android:name="com.android.quantum.admob.ui.FragmentMain"
+        android:label="Main"
+        tools:layout="@layout/fragment_main" >
+
+        <action
+            android:id="@+id/action_fragmentMain_to_banner"
+            app:destination="@id/banner" />
+
+        <action
+            android:id="@+id/action_fragmentMain_to_interstitial"
+            app:destination="@id/interstitial" />
+
+        <action
+            android:id="@+id/action_fragmentMain_to_native1"
+            app:destination="@id/native1" />
+
+        <action
+            android:id="@+id/action_fragmentMain_to_rewarded"
+            app:destination="@id/rewarded" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/banner"
+        android:name="com.android.quantum.admob.ui.Banner"
+        android:label="fragment_banner"
+        tools:layout="@layout/fragment_banner" />
+
+    <fragment
+        android:id="@+id/interstitial"
+        android:name="com.android.quantum.admob.ui.Interstitial"
+        android:label="fragment_interstitial"
+        tools:layout="@layout/fragment_interstitial" />
+
+    <fragment
+        android:id="@+id/native1"
+        android:name="com.android.quantum.admob.ui.Native"
+        android:label="fragment_native"
+        tools:layout="@layout/fragment_native" />
+
+    <fragment
+        android:id="@+id/rewarded"
+        android:name="com.android.quantum.admob.ui.Rewarded"
+        android:label="fragment_rewarded"
+        tools:layout="@layout/fragment_rewarded" />
+
+</navigation>

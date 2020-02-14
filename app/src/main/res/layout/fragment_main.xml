@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="16dp"
+    tools:context="com.android.quantum.admob.ui.MainActivity">
+
+    <Button
+        android:id="@+id/btnBanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BANNER"
+        app:layout_constraintBottom_toTopOf="@+id/btnIntertitial"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnIntertitial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="INTERSTITIAL"
+        app:layout_constraintBottom_toTopOf="@+id/btnNative"
+        app:layout_constraintTop_toBottomOf="@+id/btnBanner" />
+
+    <Button
+        android:id="@+id/btnNative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NATIVE"
+        app:layout_constraintBottom_toTopOf="@+id/btnRewarded"
+        app:layout_constraintTop_toBottomOf="@+id/btnIntertitial" />
+
+    <Button
+        android:id="@+id/btnRewarded"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REWARDED"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnNative" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

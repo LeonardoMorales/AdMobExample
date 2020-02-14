@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AdMobExample</string>
+    <string name="banner_unit_test">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="banner_unit">YOUR_BANNER_UNIT</string>
+</resources>
